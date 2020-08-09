@@ -5,3 +5,4 @@ weights
 *.so
 *.ipynb_checkpoints*
 *.json
+images/
