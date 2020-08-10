@@ -47,6 +47,7 @@ class BasePredictor(object):
             prediction = t.inv_transform(prediction)
 
         if self.zoom_in is not None and self.zoom_in.check_possible_recalculation():
+            print('zooming')
             return self.get_prediction(clicker)
 
         return prediction.cpu().numpy()[0, 0]
